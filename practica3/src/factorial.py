@@ -1,3 +1,5 @@
+# Módulo que contiene la función factorial
+
 def factorial(n):
     """
     Calcula el factorial de un número entero positivo.
@@ -20,6 +22,6 @@ def factorial(n):
     return result
 
 if __name__=='__main__':
-    for i in range(2,100):
-        print(f'{i} -> {factorial(i)}')
-   
+    for j in range(2, 100):  # Cambio el nombre de la variable 'i' a 'j'
+        print(f'{j} -> {factorial(j)}')
+
