@@ -1,13 +1,25 @@
 def factorial(n):
+    """
+    Calcula el factorial de un número entero positivo.
+
+    Entrada:
+    - n: entero positivo del cual se calculará el factorial.
+
+    Salida:
+    - El factorial de n.
+    """
     if not isinstance(n, int):
-        raise TypeError("L'argument deu ser un enter")
+        raise TypeError("El argumento debe ser un entero")
     if n < 0:
-        raise ValueError("L'argument deu ser un enter no negatiu")
+        raise ValueError("El argumento debe ser un entero no negativo")
     if n == 0:
         return 1 
-    else:
-        result = 1
-        for i in range(1, n + 1):
-            result *= i
-        return result
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+if __name__=='__main__':
+    for i in range(2,100):
+        print(f'{i} -> {factorial(i)}')
    
