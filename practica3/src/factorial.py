@@ -1,4 +1,6 @@
-# Módulo que contiene la función factorial
+"""
+Módulo que contiene la función factorial
+"""
 
 def factorial(n):
     """
@@ -24,4 +26,3 @@ def factorial(n):
 if __name__=='__main__':
     for j in range(2, 100):  # Cambio el nombre de la variable 'i' a 'j'
         print(f'{j} -> {factorial(j)}')
-
